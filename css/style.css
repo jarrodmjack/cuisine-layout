@@ -1,0 +1,507 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.container {
+  width: 1600px;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+}
+
+.header-icon {
+  font-size: 3rem;
+  color: black;
+}
+
+a:hover {
+  color: #0e99f7;
+  border-bottom: 2px solid #169dd3;
+}
+
+img {
+  width: 23%;
+}
+
+input {
+  padding: 1.6rem 15rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  }
+
+
+button{
+  padding: 1.8rem 4rem;
+  border-radius: 5px;
+  background-color: #0e99f7;
+  color: white;
+  border: none;
+  margin-left: -1rem;
+}
+
+.icon {
+  color: #0e99f7;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+p {
+  line-height: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 63px;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 6.5rem;
+  font-family: serif;
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
+
+.topbg-img  {
+  padding-top: 2rem;
+  background-image: url(/assets/food\ on\ plate.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+div.discover-bgimg {
+  background-image: url(/assets/darkrest2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+h2 {
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+}
+#discoverBtn1{
+  background-color: #0e99f7;
+}
+
+#aboutBtn1:hover{
+  width: 92px;
+}
+
+.tagline {
+  color: #0e99f7;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.tagline:hover{
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* header */
+
+.mobile-btn {
+  display: none;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+/* H1 section */
+
+.h1-wrapper {
+  padding: 30rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* discover section */
+.discover-wrapper {
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10%;
+ color: white;
+}
+.discover-wrapper p {
+  font-weight: bold;
+}
+
+
+.h2-test {
+  width: 100%;
+}
+
+.discover-menu{
+  padding: 1.9rem 4rem;
+  border-radius: 5px;
+  background-color: #0e99f7;
+  color: white;
+  width: 200px;
+  text-align: center;
+
+}
+
+.discover-menu:hover{
+  color: black;
+}
+
+
+.discover-container {
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* specialty section */
+
+.specialty-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.specialty-padding {
+  padding-top: 8rem;
+}
+
+.specialty-wrapper nav ul {
+    display: flex;
+    gap: 80px;
+    padding-top: 10%;
+}
+
+.specialty-wrapper nav ul a {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.specialty-wrapper h3{
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.imgBorder{
+  border: 1px solid black;
+}
+
+
+.img-menu {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap; */
+  gap: 30px;
+  padding-top: 5%;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#dots {
+  width: 10%;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Hours section */
+
+.hours-wrapper {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.hours-wrapper h3 {
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.phone-logo {
+  font-size: 4rem;
+  padding: 1rem;
+  color: #0e99f7;
+  border: 2px solid #0e99f7;
+  border-radius: 20px;
+}
+
+.phone-number {
+  color: #0e99f7;
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.time-container {
+  display: flex;
+  gap: 20rem;
+}
+
+.date {
+  font-size: 2.5rem;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.hours-img {
+  width: 100%;
+}
+
+.hours-img-wrapper {
+  margin-top: 5rem;
+}
+
+/* testimonials section */
+
+.test-wrapper {
+  padding: 10rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+h4 {
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.portrait-img {
+  border-radius: 50%;
+  border: 1px solid ;
+  width: 7%;
+}
+
+.name {
+  font-size: 3rem;
+}
+
+.art {
+  color: grey;
+}
+
+.citation-wrapper {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media all and (max-width:1000px){
+  .discover-wrapper{
+    display: flex;
+    padding: 1rem;
+  }
+  
+ 
+  
+  .discover-menu{
+   width: 200px;
+   
+  }
+  
+  .discover-container {
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    padding: 2rem 0;
+  }
+  
+
+
+
+}
+
+@media (min-width:374px) and (max-width:871px) {
+
+  header nav ul {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+  }
+  
+}
+
+@media all and (max-width:686px){
+  .specialty-wrapper nav ul{
+    display: flex;
+    gap: 15px;
+  }
+
+  .time-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+@media all and (max-width:600px){
+  .locationForm{
+    display: none;
+  }
+
+  .specialty-wrapper{
+    text-align: center;
+  }
+
+  .test-wrapper h4{
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .test-wrapper{
+    padding: 1rem;
+  }
+}
+
+
+@media all and (max-width:440px){
+  .specialty-wrapper nav ul{
+    gap: 5px;
+  }
+}
+
+
+@media all and (max-width:376px) {
+  .discover-wrapper {
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    
+  }
+
+  .time-container {
+    display: block;
+    
+  }
+
+  .specialty-wrapper nav {
+    display: none;
+  }
+
+  .discover-container {
+    width: 100%;
+  
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 5rem;
+  }
+
+  form {
+    display: none;
+  }
+
+
+  .portrait-img {
+    width: 50%;
+  }
+
+  .test-wrapper {
+    padding: 0;
+  }
+
+
+}
